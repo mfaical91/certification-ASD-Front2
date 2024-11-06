@@ -1,0 +1,79 @@
+/* style.css */
+
+/* Reset de style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1em;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 5em 1em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Différentes couleurs pour chaque section */
+#accueil { background-color: #f8f8f8; }
+#a-propos { background-color: #f0f0f0; }
+#services { background-color: #e8e8e8; }
+#contact { background-color: #d8d8d8; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 1em;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
